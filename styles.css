@@ -97,7 +97,7 @@
     text-align: justify;
     font-family: sans-serif;
     font-size: 20px;
-
+    color: white;
 }
 .text-highlight{
     color:blue;
@@ -122,11 +122,11 @@ section{
 
 section:nth-child(even)
 {
-    background-color:lightgrey;
+    background-color:rgb(0, 0, 33);
 }
 section:nth-child(odd)
 {
-    background-color: white;
+    background-color: rgb(28, 5, 59);
 }
 /*****************SECTION-HEADING**********************************/
 .section-heading{
@@ -138,7 +138,7 @@ section:nth-child(odd)
 
 .section-heading span{                  /*one span is made for logo and one is for heading*/
     font-size: 40px;
-    color: #2857a4;
+    color: #31db1e;
     display:inline-block ;
     padding-top: 7px;
     margin-right:0.5rem ;
@@ -237,7 +237,7 @@ section:nth-child(odd)
   width: 55%;
   transition: width 0.5s ease; 
 }
-/*************** Portfolio Section *******************/
+/*************** Projects Section *******************/
 .portfolio-container {
     box-sizing: border-box;
     display: flex;
@@ -270,7 +270,7 @@ section:nth-child(odd)
     top: 0;
     left: 0;
     height: 100%;
-    color: transparent;
+    color: white;
     text-align: center;
     padding: 10px;
     font-size: 30px;
@@ -287,8 +287,8 @@ section:nth-child(odd)
 /***************contact section********************/
 
 #contact {
-    background-color: #0abcf9;
-    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    background-color: rgb(0, 0, 33);
+    /* background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%); */
     color: white;
     padding-bottom: 40px;
 }
@@ -401,7 +401,9 @@ textarea {
     margin: 5px;
    
 }
-
+.timeline-boxes p{
+color: white;
+}
 
 .timeline-boxes:nth-child(2n) {
     left: 53%;
@@ -414,12 +416,15 @@ textarea {
     width:40px;
     background-size: contain;
     margin-right: 20px;
-    background-image:url(https://www.vhv.rs/dpng/d/433-4335411_work-work-icon-png-transparent-png.png);
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOalY5jOwalZ08dl627apVBZ53d4QhbTbH-A&usqp=CAU);
 }
 .timeline-boxes:hover{
     background-image: linear-gradient(to top right,grey,pink,skyblue,violet);
+    
 }
-
+.timeline-boxes:hover p{
+    color: black;
+}
 .timeline-divider{
     position: absolute;
     height: 80%;
@@ -442,7 +447,7 @@ textarea {
     position: absolute;
     width: 0.5rem;
     height: 0.5rem;
-    background-color: red;
+    background-color: white;
     top: 30%;
     border-radius: 50%;
     right: -10%;
@@ -452,7 +457,7 @@ textarea {
     position: absolute;
     width: 0.5rem;
     height: 0.5rem;
-    background-color: red;
+    background-color: white;
     top: 30%;
     left: -10%;
     border-radius: 50%;
@@ -466,6 +471,28 @@ textarea {
     top: 40%;
     transform: rotate(90deg);
 }
+/**********for dots in car**********/
+.education-boxes:nth-child(2n+1)::after{
+    content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  top: 30%;
+  border-radius: 50%;
+  right: -10%;
+}
+.education-boxes:nth-child(2n)::before{
+    content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  top: 30%;
+  left: -10%;
+  border-radius: 50%;
+  z-index: 2;
+}
 .education-boxes{
     padding: 5px;
     width: 40%;
@@ -476,8 +503,12 @@ textarea {
     border: 0px solid transparent;
     margin: 5px;
 }
-
-
+.education-boxes p{
+    color: white;
+}
+.education-boxes h3{
+    color: white;
+}
 .education-boxes:nth-child(2n) {
     left: 53%;
 }
