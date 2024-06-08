@@ -6,6 +6,9 @@ https://github.com/jitendra3618/myPortfolio_Website/assets/137607500/0db3c3c4-64
 <h1>live link</h1>
 https://jitendra3618.github.io/myPortfolio_Website/
 
+<h2>Live link</h2>
+https://66640ee26ba16e95da443372--thunderous-gumption-ea5504.netlify.app/
+
 # Portfolio Website
 
 Welcome to the repository for my personal portfolio website! This website showcases my skills, projects, and experiences. It is designed and developed using HTML, CSS, and JavaScript.
